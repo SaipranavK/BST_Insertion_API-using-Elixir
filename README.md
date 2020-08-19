@@ -25,10 +25,10 @@ be found at [https://hexdocs.pm/bst](https://hexdocs.pm/bst).
 
 ```
 # clone the repo
-<path> git clone https://github.com/SaipranavK/motorola-challenge.git
+<path> git clone https://github.com/SaipranavK/motorola-student-worker-challenge.git
 
 # code interaction with iex shell
-<path>/motorola-challenge>iex -S mix 
+<path>/motorola-student-worker-challenge>iex -S mix 
 ```
 
 ## Run Tests

@@ -22,8 +22,12 @@ be found at [https://hexdocs.pm/bst](https://hexdocs.pm/bst).
 
 
 ## Usage
-<path> git clone 
-<path>/<bst> iex -S mix 
+```
+<path> git clone https://github.com/SaipranavK/motorola-challenge.git
+<path>/motorola-challenge>iex -S mix 
+```
 
 ## Run Tests
-<path>/<bst> mix test test/bst_test.exs
+```
+<path>/motorola-challenge>mix test test/bst_test.exs
+```

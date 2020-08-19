@@ -1,4 +1,6 @@
 # Binary Search Tree
+[![Build Status](https://travis-ci.com/SaipranavK/motorola-student-worker-challenge.svg?token=yuqgzcJWYEqqx9oxnxVc&branch=master)](https://travis-ci.com/github/SaipranavK/motorola-student-worker-challenge)
+
 <b>IMPORTANT: THIS IS NOT THE FINAL SUBMISSION</b>
 
 This repository is the solution for test to be completed as part of the first stage of the recruitment process for the role - Student Worker - Software Engineer, Motorola Solutions, Denmark.

@@ -34,7 +34,7 @@ be found at [https://hexdocs.pm/bst](https://hexdocs.pm/bst).
 ## Run Tests
 
 ```
-<path>/motorola-challenge>mix test test/bst_test.exs
+<path>/motorola-student-worker-challenge>mix test test/bst_test.exs
 ```
 
 ### Todo

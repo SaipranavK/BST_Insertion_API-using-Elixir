@@ -1,7 +1,7 @@
 # Binary Search Tree
+<b>IMPORTANT: THIS IS NOT THE FINAL SUBMISSION</b>
 
-Student Worker - Software Engineer, Motorola Solutions, Denmark
-
+This repository serves as a solution for the first stage of the recruitment process for the role - Student Worker - Software Engineer, Motorola Solutions, Denmark.
 
 ## Installation
 
@@ -22,12 +22,22 @@ be found at [https://hexdocs.pm/bst](https://hexdocs.pm/bst).
 
 
 ## Usage
+
 ```
+# clone the repo
 <path> git clone https://github.com/SaipranavK/motorola-challenge.git
+
+# code interaction with iex shell
 <path>/motorola-challenge>iex -S mix 
 ```
 
 ## Run Tests
+
 ```
 <path>/motorola-challenge>mix test test/bst_test.exs
 ```
+
+### Todo
+1. REST API for the insert operation using Plug.
+2. Setup Travis CI.
+3. Dockerize and Deploy.

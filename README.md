@@ -38,6 +38,6 @@ be found at [https://hexdocs.pm/bst](https://hexdocs.pm/bst).
 ```
 
 ### Todo
-1. REST API for the insert operation using Plug.
-2. Setup Travis CI.
-3. Dockerize and Deploy.
+- [] REST API for the insert operation using Plug.
+- [] Setup Travis CI.
+- [] Dockerize and Deploy.

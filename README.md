@@ -1,5 +1,5 @@
 # Binary Search Tree
-[![Build Status](https://travis-ci.com/SaipranavK/motorola-student-worker-challenge.svg?token=yuqgzcJWYEqqx9oxnxVc&branch=master)](https://travis-ci.com/github/SaipranavK/motorola-student-worker-challenge)
+[![Build Status](https://travis-ci.com/SaipranavK/motorola-student-worker-challenge.svg?token=yuqgzcJWYEqqx9oxnxVc&branch=bst-rest)](https://travis-ci.com/github/SaipranavK/motorola-student-worker-challenge)
 
 <b>IMPORTANT: THIS IS NOT THE FINAL SUBMISSION</b>
 

@@ -34,5 +34,5 @@ headers = [{"content-type", "application/json"}]
 ```
 
 ### Todo
-- [ ] REST API for the insert operation using Plug.
+- [x] REST API for the insert operation using Plug.
 - [ ] Dockerize and Deploy.

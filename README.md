@@ -44,4 +44,4 @@ docker run --rm -it  -p 8080:8080/tcp <tag>:latest
 
 ### Todo
 - [x] REST API for the insert operation using Plug.
-- [ ] Dockerize and Deploy.
+- [x] Dockerize and Deploy.

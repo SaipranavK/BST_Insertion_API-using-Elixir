@@ -25,6 +25,12 @@ body = Poison.encode!(%{"value" => n, "tree" => tree})
 headers = [{"content-type", "application/json"}]
 {:ok, resp} = HTTPoison.post(url, body, headers, [])
 
+
+# docker
+build:
+docker build . -t <tag>
+run:
+docker run --rm -it  -p 8080:8080/tcp <tag>:latest
 ```
 
 ## Run Tests

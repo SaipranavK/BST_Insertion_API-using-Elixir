@@ -3,7 +3,10 @@
 
 <b>IMPORTANT: THIS IS NOT THE FINAL SUBMISSION</b>
 
+available on https://binary-search-tree.saipranavk.usw1.kubesail.org/
+
 This repository is the solution for test to be completed as part of the first stage of the recruitment process for the role - Student Worker - Software Engineer, Motorola Solutions, Denmark.
+
 
 ## Usage
 

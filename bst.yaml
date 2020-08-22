@@ -1,95 +1,37 @@
----
 apiVersion: v1
-kind: Namespace
-metadata:
-  name: kubesail-agent
-  labels:
-    app: kubesail-agent
-
----
-apiVersion: v1
-kind: Secret
-type: Opaque
-metadata:
-  name: kubesail-agent
-  namespace: kubesail-agent
-  labels:
-    app: kubesail
-data:
-  KUBESAIL_AGENT_USERNAME: "U2FpcHJhbmF2Sw=="
-  KUBESAIL_AGENT_SECRET: "ZjRlYjdlMWI3NWRhZTAyMzRlNGE1NDBmY2RjMDNmZmI="
-  KUBESAIL_AGENT_GATEWAY_TARGET: "aHR0cHM6Ly91c3cxLms4ZzguY29t"
-
----
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: kubesail-agent
-  namespace: kubesail-agent
-  labels:
-    app: kubesail-agent
-
----
-apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRoleBinding
-metadata:
-  name: kubesail-agent
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: ClusterRole
-  name: cluster-admin
-subjects:
-  - kind: ServiceAccount
-    name: kubesail-agent
-    namespace: kubesail-agent
-
----
-apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kubesail-agent
-  namespace: kubesail-agent
+name: binary-search-tree
 spec:
-  selector:
-    matchLabels:
-      app: kubesail-agent
-  minReadySeconds: 1
-  strategy:
-    type: Recreate
-  replicas: 1
-  template:
-    metadata:
-      annotations:
-        prometheus.io/port: "5000"
-        prometheus.io/scrape: "true"
-      labels:
-        app: kubesail-agent
-    spec:
-      serviceAccountName: kubesail-agent
-      terminationGracePeriodSeconds: 0
-      containers:
-        - name: agent
-          image: kubesail/agent:v0.12.0
-          imagePullPolicy: Always
-          envFrom:
-            - secretRef:
-                name: kubesail-agent
-          env:
-            - name: KUBESAIL_AGENT_KEY
-              value: "30fc4f2b486a47f8d5bba8630fa53130"
-            - name: INGRESS_CONTROLLER_NAMESPACE
-              value: ingress-nginx
-            - name: INGRESS_CONTROLLER_ENDPOINT
-              value: ingress-nginx-controller
-            - name: LOG_LEVEL
-              value: info
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-            limits:
-              cpu: "2"
-              memory: 1500Mi
-
+replicas: 1
+strategy:
+  type: Recreate
+selector:
+  matchLabels:
+    app: binary-search-tree
+template:
+  metadata:
+    creationTimestamp: null
+    labels:
+      app: binary-search-tree
+  spec:
+    containers:
+    - name: binary-search-tree
+    image: saipranavk/binary-search-tree:latest
+    ports:
+      - containerPort: 8080
 ---
-  
+apiVersion: v1 
+kind: Service
+metadata:
+  name: binary-search-tree
+  labels:
+    app: binary-search-tree
+spec:
+  ports:
+    - portocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: binary-search-tree
+  type: LoadBalancer

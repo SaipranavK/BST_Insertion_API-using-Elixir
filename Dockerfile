@@ -27,4 +27,4 @@ COPY . .
 EXPOSE 8080
 
 # Compile the entire project
-CMD [ "iex", "-S", "mix" ]
+CMD ["mix","run","--no-halt" ]

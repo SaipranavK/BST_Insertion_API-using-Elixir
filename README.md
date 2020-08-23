@@ -20,7 +20,7 @@ GitHub checks are powered by Travis-CI and the results of the every commit on th
 
 
 ## Usage
-**The docker image build can be pulled using the command:**
+**The docker image of this build can be pulled using the command:**
 ```
 docker pull saipranavk/binary-search-tree 
 ```

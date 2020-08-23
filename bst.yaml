@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+name: binary-search-tree
+spec:
+replicas: 1
+strategy:
+  type: Recreate
+selector:
+  matchLabels:
+    app: binary-search-tree
+template:
+  metadata:
+    creationTimestamp: null
+    labels:
+      app: binary-search-tree
+  spec:
+    containers:
+    - name: binary-search-tree
+    image: saipranavk/binary-search-tree:latest
+    ports:
+      - containerPort: 8080
+---
+apiVersion: v1 
+kind: Service
+metadata:
+  name: binary-search-tree
+  labels:
+    app: binary-search-tree
+spec:
+  ports:
+    - portocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: binary-search-tree
+  type: LoadBalancer

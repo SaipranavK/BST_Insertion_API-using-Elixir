@@ -45,21 +45,21 @@ Sample POSTMAN request are attached below for reference:
 
 To create a new tree with n as root element
 
-<img src="public/bst-api-response-2.png">
+<img src="public/bst-api-response-2.PNG">
 
 To add a new element to an exisiting tree
 
-<img src="public/bst-api-response.png">
+<img src="public/bst-api-response.PNG">
 
 n must be an interger. Invalid key value pair of n will return with response
 
-<img src="public/bst-api-response-retry.png">
+<img src="public/bst-api-response-retry.PNG">
 
-<img src="public/bst-api-response-retry-2.png">
+<img src="public/bst-api-response-retry-2.PNG">
 
 Invalid payload will return
 
-<img src="public/bst-api-response-err.png">
+<img src="public/bst-api-response-err.PNG">
 
 ---
 

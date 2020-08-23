@@ -19,7 +19,7 @@ This build is a REST API implementation of Binary Search Tree (BST) insertion op
 GitHub checks are powered by Travis-CI and the results of the every commit on the repository can be seen at https://travis-ci.com/github/SaipranavK/motorola-student-worker-challenge
 
 
-##Usage
+## Usage
 **The docker image build can be pulled using the command:**
 ```
 docker pull saipranavk/binary-search-tree 
@@ -37,8 +37,8 @@ or you can directly access the API at https://binary-search-tree.saipranavk.usw1
 1. **GET: "/"** - Generic test route to check if the server is running
 <br>**Response:** "Binary Search Tree REST API" with status code 200
 
-2. **POST: "/insert"** - Route to create tree/ add new node
-<br>**Payload:** { tree: tree, n: n } where, n is the value to be added. To create a new tree pass tree: null/nil.
+2. **POST: "/insert"** - Route to create tree/add new node
+<br>**Payload:** { "tree": tree, "n": n } where, n is the value to be added. To create a new tree pass "tree": null/nil.
 <br>**Response**: tree with status code 200
 
 Sample POSTMAN request are attached below for reference: 

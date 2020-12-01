@@ -1,7 +1,5 @@
-# Motorola Student Worker Challenge
+# Binary Search Tree using Elixir
 [![Build Status](https://travis-ci.com/SaipranavK/motorola-student-worker-challenge.svg?token=yuqgzcJWYEqqx9oxnxVc&branch=master)](https://travis-ci.com/github/SaipranavK/motorola-student-worker-challenge)
-
-This repository is the solution for programming test for the role of Student Worker - Software Engineer, Motorola Solutions, Denmark.
 
 The following challenges are addressed in the build:
 

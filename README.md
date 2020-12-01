@@ -12,8 +12,7 @@ as your programming language, use Plug.
 4. Optional challenge: dockerize your application, deploy on Kubernetes and set-up
 ingress. You can use a free service such as e.g. kubesail.com.
 
-This build is a REST API implementation of Binary Search Tree (BST) insertion opertation using Elixir and Plug dockerized and deployed with kubernetes on KubeSail available at <br> https://binary-search-tree.saipranavk.usw1.kubesail.org/ 
-
+This build is a REST API implementation of Binary Search Tree (BST) insertion opertation using Elixir and Plug dockerized and deployed with kubernetes 
 GitHub checks are powered by Travis-CI and the results of the every commit on the repository can be seen at https://travis-ci.com/github/SaipranavK/motorola-student-worker-challenge
 
 
